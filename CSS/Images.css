@@ -29,6 +29,7 @@ img.NoRound {
 img.Show {
 	vertical-align: middle;
 	border-radius: 10px 10px 0px 0px;
+	width: auto;
 	height: 75vh;
 }
 
