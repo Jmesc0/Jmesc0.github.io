@@ -2,7 +2,6 @@
 * {
     box-sizing: border-box;
 }
-
 /* Images */
 /* Causes images to default with a curved edge */
 img {
@@ -25,12 +24,15 @@ img.border{
 img.NoRound {
     border-radius: 0%
 }
-
 img.Show {
 	vertical-align: middle;
 	border-radius: 10px 10px 0px 0px;
 }
 
+video.Show {
+	vertical-align: middle;
+	border-radius: 10px 10px 0px 0px;
+}
 video.Show {
 	vertical-align: middle;
 	border-radius: 10px 10px 0px 0px;
