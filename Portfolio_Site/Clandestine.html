@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Jmesco/Clandestine</title>
+    <meta name="viewport" content="width=device-width, initial-scale=.8">	  <link rel="stylesheet" href="CSS/Images.css">
+	  <link rel="stylesheet" href="CSS/Text.css">
+	  <link rel="stylesheet" href="CSS/BodyLayout.css">
+  	<link rel="stylesheet" href="CSS/NavbarButton.css">
+   	<link rel="stylesheet" href="CSS/PopUpMenu.css">
+  	<link rel="stylesheet" href="CSS/SlideshowHome.css">
+
+	  <style>
+        
+    </style> </head> 
+
+    <body><div id="back"><div id="small">
+        
+        <!--slidout memu-->
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&laquo;</a>
+            <div class="overlay-content">
+    	
+				          <div class="menu">
+                    <h1>Jmesco</h1>	
+                    <img src="Images/Jmesco_PFP.jpg" alt="PFP" width="100%" border="5" >
+                      
+					          <h3 class="TabPad">
+                        <i>« Je suis comme je suis, et cela me suffit. »</i>
+					            	<br><br>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Maxime eum aut perspiciatis quisquam soluta. 
+                            Iusto consequatur porro non recusandae eius eos labore sed, ea nihil laudantium cum amet suscipit qui?
+                    </h3>
+
+                        <a class="NoBlue" href="index.html"><h3 class="ReturnPad">❯ Home Gallery</h3></a>  
+                        <a class="NoBlue" href="PersonalArt.html"><h3 class="ReturnPad">❯ Personal Art</h3></a> 
+                        <a class="NoBlue" href="UniArt.html"><h3 class="ReturnPad">❯ University Work</h3></a> 
+                        <a class="NoBlue" href="HSArt.html"><h3 class="ReturnPad">❯ High School Work</h3></a>						  
+					              <a class="NoBlue" href="Sketches.html"><h3 class="ReturnPad">❯ Sketches and Doodles</h3></a>	  
+                        <a class="NoBlue" href="Other.html"><h3 class="ReturnPad">❯ Other</h3></a>
+                         	 
+				        </div>  
+            </div>
+        </div>
+
+        <!--Banner-->
+        <div class="ban"><img src="Images/Banner.jpg" width="100%" class="NoRound"></div>
+
+        <!--Nav-->
+        <div id="navbar">
+            <a <span style="cursor:pointer" onclick="openNav()">&raquo;</span> </a>  
+            <script>
+                 function openNav() {
+                    document.getElementById("myNav").style.width = "498px";
+                    }
+				
+                function closeNav() {
+                    document.getElementById("myNav").style.width = "0%";
+                    }
+            </script>
+        <script>
+                window.onscroll = function() {myFunction()};
+                
+                var navbar = document.getElementById("navbar");
+                var sticky = navbar.offsetTop;
+                
+                function myFunction() {
+                  if (window.pageYOffset >= sticky) {
+                    navbar.classList.add("sticky")
+                  } else {
+                    navbar.classList.remove("sticky");
+                  }
+                }
+        </script>    
+        <!--Nav end-->    
+        </div>
+        
+        <!--Main-->
+        <div class="main">
+
+                <!--slideshow-->
+                <div class="slideshow-container">
+
+                        <div class="mySlides fade">
+                            <img class="Show" src="Images/Main/Clandestine.jpg" style="width:100%" >
+                            <div class="caption-container-curved">Clandestine</div>
+                        </div>
+                
+                        <script>
+                                var slideIndex = 1;
+                                showSlides(slideIndex);
+                                
+                                function plusSlides(n) {
+                                  showSlides(slideIndex += n);
+                                }
+                                
+                                function currentSlide(n) {
+                                  showSlides(slideIndex = n);
+                                }
+                                
+                                function showSlides(n) {
+                                  var i;
+                                  var slides = document.getElementsByClassName("mySlides");
+                                  var dots = document.getElementsByClassName("dot");
+                                  if (n > slides.length) {slideIndex = 1}    
+                                  if (n < 1) {slideIndex = slides.length}
+                                  for (i = 0; i < slides.length; i++) {
+                                      slides[i].style.display = "none";  
+                                  }
+                                  for (i = 0; i < dots.length; i++) {
+                                      dots[i].className = dots[i].className.replace(" active", "");
+                                  }
+                                  slides[slideIndex-1].style.display = "block";  
+                                  dots[slideIndex-1].className += " active";
+                                }
+                        </script>                    
+                </div>
+        </div>        
+
+        <!--Footer-->
+        <div class="footer">
+            <h2>Jmesco 2018-22</h2>
+            <!--<h3><a href="#.html" target="_blank">Email Link (loops)</a></h3>-->
+            <!--End Footer-->
+        </div>       
+
+    </div></div></body>
+
+</html>
