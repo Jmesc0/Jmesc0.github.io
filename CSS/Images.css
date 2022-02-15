@@ -9,8 +9,7 @@ img {
 	border-radius: 19px;
 	vertical-align: middle;
 	
-	width: auto;
-
+	height: auto;
 	max-height: 80vh;
 	
 }
@@ -33,6 +32,10 @@ img.Show {
 	
 }
 
+video.Show {
+	vertical-align: middle;
+	border-radius: 10px 10px 0px 0px;
+}
 video.Show {
 	vertical-align: middle;
 	border-radius: 10px 10px 0px 0px;
