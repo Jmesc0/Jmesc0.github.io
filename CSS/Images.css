@@ -2,16 +2,13 @@
 * {
     box-sizing: border-box;
 }
-
 /* Images */
 /* Causes images to default with a curved edge */
 img {
 	border-radius: 19px;
-	vertical-align: middle;
-	
+	vertical-align: middle;	
 	height: auto;
-	max-height: 80vh;
-	
+	max-height: 80vh;	
 }
 /* Causes slide images to default with a curved edge and border */
 img.slide {
@@ -25,12 +22,9 @@ img.border{
 img.NoRound {
     border-radius: 0%
 }
-
 img.Show {
 	vertical-align: middle;
 	border-radius: 10px 10px 0px 0px;
-	width: auto;
-	height: 75vh;
 }
 
 video.Show {
