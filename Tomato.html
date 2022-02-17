@@ -3,7 +3,8 @@
   <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <title>Jmesco/Tomato</title>
-    <meta name="viewport" content="width=device-width, initial-scale=.8">	  <link rel="stylesheet" href="CSS/Images.css">
+    <meta name="viewport" content="width=device-width, initial-scale=.8">	  
+    <link rel="stylesheet" href="CSS/Images.css">
 	  <link rel="stylesheet" href="CSS/Text.css">
 	  <link rel="stylesheet" href="CSS/BodyLayout.css">
   	<link rel="stylesheet" href="CSS/NavbarButton.css">
@@ -49,7 +50,7 @@
 
         <!--Nav-->
         <div id="navbar">
-            <a <span style="cursor:pointer" onclick="openNav()">&raquo;</span> </a>  
+            <a span style="cursor:pointer" onclick="openNav()">&raquo;</span> </a>  
             <script>
                  function openNav() {
                     document.getElementById("myNav").style.width = "498px";
@@ -82,11 +83,16 @@
                 <!--slideshow-->
                 <div class="slideshow-container">
 
-                        <div class="mySlides fade">
-                            <img class="Show" src="Images/Main/Tomato.jpg" style="width:100%" >
-                            <div class="caption-container-curved">Tomato</div>
-                        </div>
-                
+                  <div class="mySlides fade">
+                    <img class="Show" src="Images/Main/Tomato.jpg">
+                    <div class="caption-container-curved">
+                        Tomato
+                        <br>
+                        <a onclick="history.back()" class="PreNxt">&laquo; Return</a>
+                    </div>
+                  </div> 
+                        
+                        <!-- IDK why the script is still needed, even though i removed the slideshow above, but the site breaks when i remove it so guess its staying -->
                         <script>
                                 var slideIndex = 1;
                                 showSlides(slideIndex);
@@ -114,7 +120,8 @@
                                   slides[slideIndex-1].style.display = "block";  
                                   dots[slideIndex-1].className += " active";
                                 }
-                        </script>                    
+                        </script>   
+                                         
                 </div>
         </div>        
 
