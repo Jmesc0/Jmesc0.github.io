@@ -3,6 +3,10 @@ body {
     font-family: Pacifico, Arial, Helvetica, sans-serif;
     margin: 0;
 }
+h3 {
+    font-family: Work Sans, Helvetica, sans-serif;
+}
+
 
 /* Rid of the blue line for links, replaces with white */
 .NoBlue {
