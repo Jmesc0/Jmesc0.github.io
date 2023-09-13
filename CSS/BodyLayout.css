@@ -1,0 +1,35 @@
+
+/* background Texture */
+#back{
+    background-image: url("../Images/Tile.jpg");
+    min-width: none;
+    min-height: 100vh;
+    width: 100%;
+    height: 100%;
+}
+
+/* Allows the texture borders */
+#small{
+	width: 85%;
+	min-width: 483px; /*780 0G > 483 */
+	margin: auto;
+}
+
+/* banner background , What causes the white line to be whit and not clear */
+.ban {
+    padding: 0px;
+    background: #333;
+}
+
+/* Main */
+.main {   
+    background-color: white;
+    padding: 20px;
+}
+
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+}

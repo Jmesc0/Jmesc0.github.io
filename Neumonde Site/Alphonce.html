@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Neumonde</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="CSS.css">
+	
+<style>
+	
+/* background Texture */
+#back{
+	background-image: url("images/Text/tile.jpg")
+}
+	
+.image2
+    {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+    }
+/*slideshow*/
+.mySlides {display: none}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  margin: auto;
+  margin-top: 2%;
+  width: 90%;
+  max-width: 700px;
+  height: fit-content;
+  border-radius: 19px;
+  border: 5px solid black;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* Caption text */
+.text-caption {
+    color: #f2f2f2;
+    font-size: 20px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;	
+  }
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+  }
+
+/* Container for image text */
+.caption-container-curved {
+  font-size: 19px;
+  width: fit-content;
+  text-align: center;
+  background-color: #222;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: white;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;	
+}
+/* Nav Button */
+.PreNxt:hover {
+  background-color: aqua;
+  color: black;
+}
+
+.PreNxt {
+  background-color: #373737;
+  color: white;
+  border-radius: 10px;
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+  cursor: pointer;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 2px;
+  margin-bottom: 10px;
+}
+
+.SeeMore {
+  background-color: #373737;
+  color: white;
+  border-radius: 10px;
+  font-size: 1.75em;
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+  cursor: pointer;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 2px;
+  margin-bottom: 10px;
+}
+
+img.Show {
+	vertical-align: middle;
+  align-items: center;
+	border-radius: 10px 10px 0px 0px;
+
+	width: auto;
+	height: auto;
+	max-width: 100%;
+
+}
+
+.textalign {
+text-align: left;
+padding-left: 10px;
+padding-right: 10px;
+}
+
+/* Rid of the blue line for links, replaces with white */
+.NoBlue {
+    color: white;
+}
+
+</style> </head> 
+	  
+<body><div id="back"><div id="small">
+    
+	<!--SideRow-->
+	<div class="row">	
+	 <!--End SideRow-->
+		
+      
+		<!--Main-->
+		<div class="main">
+			<div class="banner">
+				<a href="Neomonde.html" style="text-decoration: none;"><h2 class="white">Neumonde Museum</h2></a>
+			</div>
+			<div style="padding: 10px;"></div>
+			
+        	<div class="links">
+
+				<div class="row">
+					<div class="Left"><img class="Centre" src="images/Untitled-1.png"></div>
+					<div class="Right">
+						<p class="TabPad">
+							
+							<h1>Art of Alphonce Muller </h1>
+							<p>Alphonce Muller, one of the original members of the Meili Mission to first explore the Neumonde, was the lead astrobiologist chosen because of his prior work on Europa. With the change of environment from the icy dark depths of Jupiter's moon to the strangely familiar landscapes of Neumonde, he would occasionally make sketches of the native wildlife alongside his notes and photos. While the sketches may not be the most technically advanced, they are the first illustrations of the new planet, as well as his notes providing a look back into the earliest days of understanding life outside of the Sol System.</p>
+							<br>
+              <p>Below is a series of several of his sketches along with snapshots of his notes. Several of the sketches are also available to be seen in person at select locations for a limited time.</p>
+							
+						</p>
+					</div>
+				</div>
+				<div class="row">
+
+                    <div class="Left2" >
+					<!--slideshow-->
+                    <div class="slideshow-container">
+
+                        <!--allows arrow keys for nav-->
+                        <script> 
+                        document.addEventListener('keydown', function(event) {
+                            if(event.keyCode == 37) {
+                                plusSlides(-1)
+                            }
+                            else if(event.keyCode == 39) {
+                                plusSlides(1)
+                            }
+                        });
+                        </script>
+
+                        <div class="mySlides fade">
+                            <img class="Show" src="images/20230320_182603.jpg" style="width= 100px">
+                            <div class="caption-container-curved">
+                                <font size="+2"><b>Violet Corallyne</b></font>
+                                <br>
+                                <p class="textalign">
+                                  The flowers consist of violet petals, with the stamen/carpel like structures from the center. Despite visual similarities, it is unknown if they share the same reproductive purpose as terrestrial flowers. The flower structures tend to be anywhere in size between .1 to 1 meters in diameter, though there have been found a few growing up to 2 meters. They either grow low to the ground, often in large clusters, or in the large trees. The lack of apparent leaves on the plants for example may mean the flower petals have more in common with terrestrial leaves or, they may be more like fungi. 
+                                  <br> <br>
+                                  Available in person at <a href="Visit.html" class="NoBlue">Terra, Greater Ohio</a>
+                                </p>
+                                <a onclick="plusSlides(-1)" class="PreNxt">&laquo; Previous</a>
+                                <a onclick="plusSlides(1)" class="PreNxt">Next &raquo; </a>
+                            </div>
+                        </div>
+                        
+                        <div class="mySlides fade">
+                            <img class="Show" src="images/20230320_182528.jpg">
+                            <div class="caption-container-curved">
+                                <font size="+2"><b>Hummingfly</b></font>
+                                <br>
+                                <p class="textalign">
+                                  They seem to share many things in common with terrestrial insects such as wings, eyes and proboscis. Their bodies, however, appear more lizard-like and Lorenzo has recently begun calling them “Salarangos.” Despite having wings, it doesn’t appear that they are capable of sustained flight using them more for walking. Flight seems to be more of a response to danger rather than a means of transportation. It should be noted that when in flight, they emit a soft, fluttering sound, whether to attract a mate or deter an enemy is not yet known. 
+                                  <br> <br>
+                                  Available in person at <a href="Visit.html" class="NoBlue">Terra, New California Republic</a>
+                                </p>  
+                                <a onclick="plusSlides(-1)" class="PreNxt">&laquo; Previous</a>
+                                <a onclick="plusSlides(1)" class="PreNxt">Next &raquo; </a>                          
+                            </div>
+                        </div>
+                        
+                        <div class="mySlides fade">
+                            <img class="Show" src="images/20230320_182548.jpg">
+                            <div class="caption-container-curved">
+                                <font size="+2"><b>Two-Toed Salarango</b></font>
+                                <br>
+                                <p class="textalign">
+                                  Number 153 is one of the larger lizards on Neumonde reaching lengths of about 1 to 2 meters. The most noticeable features of the salarango is its large eyes. Each eye is located out at the far sides of the head, with vertical pupils having nearly 270° of motion. They also don't appear to blink or close their eyes instead, the outside appears to be a clear shell that encases the eyeball as if the eye was inside a perfectly shaped glass bottle. The mouth of the salarango is more like a set of mandibles on an ant than the jaws found on terrestrial lizards. 
+                                  <br> <br>
+                                  Available in person at <a href="Visit.html" class="NoBlue">Mars, Argyre Basin</a>
+                                </p>
+                                <a onclick="plusSlides(-1)" class="PreNxt">&laquo; Previous</a>
+                                <a onclick="plusSlides(1)" class="PreNxt">Next &raquo; </a>
+                            </div>
+                        </div>
+
+                        <div class="mySlides fade">
+                          <img class="Show" src="images/20230320_182621.jpg">
+                          <div class="caption-container-curved">
+                              <font size="+2"><b>Sailed Trorzen</b></font>
+                              <br>
+                              <p class="textalign">
+                                The study of the Number 131 has been limited as they scare easily when approached and often retreat into the watery depths of the rivers they call home. The 131 has a prehistoric bird/dinosaur appearance with its wings and colorful sail down its back. Its webbed-feet and the ability to remain submerged for up to 20 minutes, however, make it adept for aquatic life. Until more observations can be made, the question of whether it is primarily a land or water creature is still unknown 
+                                <br> <br>
+                                  Available in person at <a href="Visit.html" class="NoBlue">Mars, Argyre Basin</a>
+                                </p>
+                                <a onclick="plusSlides(-1)" class="PreNxt">&laquo; Previous</a>
+                                <a onclick="plusSlides(1)" class="PreNxt">Next &raquo; </a>
+                          </div>
+                      </div>
+  
+                        <script>
+                                var slideIndex = 1;
+                                showSlides(slideIndex);
+                                
+                                function plusSlides(n) {
+                                  showSlides(slideIndex += n);
+                                }
+                                
+                                function currentSlide(n) {
+                                  showSlides(slideIndex = n);
+                                }
+                                
+                                function showSlides(n) {
+                                  var i;
+                                  var slides = document.getElementsByClassName("mySlides");
+                                  var dots = document.getElementsByClassName("dot");
+                                  if (n > slides.length) {slideIndex = 1}    
+                                  if (n < 1) {slideIndex = slides.length}
+                                  for (i = 0; i < slides.length; i++) {
+                                      slides[i].style.display = "none";  
+                                  }
+                                  for (i = 0; i < dots.length; i++) {
+                                      dots[i].className = dots[i].className.replace(" active", "");
+                                  }
+                                  slides[slideIndex-1].style.display = "block";  
+                                  dots[slideIndex-1].className += " active";
+                                }
+                        </script> 
+                        </div>                   
+                </div>
+				</div>
+
+				<!-- </div>
+				<div class="row">
+					<div class="Left"><img class="Centre" src="https://via.placeholder.com/100" border="5"></div>
+					<div class="Right">
+						<p class="TabPad">
+							<a href="#" class="SeeMore">About Us</a>
+								<br><br>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, voluptates. Itaque corrupti architecto perferendis odio iste, repellat voluptates similique deserunt delectus assumenda? Sit eius expedita sunt molestias! Laborum, distinctio porro?
+						</p>
+					</div>
+				</div> -->
+	
+				
+	<!--end the main body-->			
+    </div>	
+    <!--Footer-->		
+    <div class="footer">
+    	<a href="Neomonde.html" style="text-decoration: none;"><h2 class="white">Neumonde Museum</h2></a>	
+      <h3 class="white" >Jaylyn Escobar <a href="https://jmesc0.github.io" target="_blank" class="NoBlue">Jmesco.com</a> 2023</h3>
+    	<!--EndFooter-->
+	</div>
+</div></div></body>
+</html>

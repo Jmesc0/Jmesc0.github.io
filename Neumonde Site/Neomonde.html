@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Neumonde</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="CSS.css">
+	
+<style>
+	
+/* background Texture */
+#back{
+	background-image: url("images/Text/tile.jpg")
+}
+	
+.image2
+    {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+    }
+
+	/* Rid of the blue line for links, replaces with white */
+.NoBlue {
+    color: white;
+}
+
+</style> </head> 
+	  
+<body><div id="back"><div id="small">
+    
+	<!--SideRow-->
+	<div class="row">	
+	 <!--End SideRow-->
+		
+      
+		<!--Main-->
+		<div class="main">
+			<div class="banner">
+				<a href="Neomonde.html" style="text-decoration: none;"><h2 class="white">Neumonde Museum</h2></a>
+			</div>
+			<div style="padding: 10px;"></div>
+			<div class="slideshow-container">
+
+				<div class="mySlides fade">
+				  <img src="images/Banner1.jpg" style="width:100%">
+				  <img class="image2" src="images/NeumondeOverlay.png" style="height: 80%;">
+				  <div class="text"></div>
+				</div>
+				
+				
+				<div class="mySlides fade">
+				  <img src="images/Banner2.jpg" style="width:100%">
+				  <img class="image2" src="images/NeumondeOverlay.png" style="height: 80%;">
+				  <div class="text"></div>
+				</div>
+
+				<div class="mySlides fade">
+					<img src="images/Banner3.jpg" style="width:100%">
+					<img class="image2" src="images/NeumondeOverlay.png" style="height: 80%;">
+					<div class="text"></div>
+				</div>
+				
+				</div>
+				<br>
+				
+				<div style="text-align:center">
+				  <span class="dot"></span> 
+				  <span class="dot"></span>  
+				  <span class="dot"></span> 
+				</div>
+				
+				<script>
+				let slideIndex = 0;
+				showSlides();
+				
+				function showSlides() {
+				  let i;
+				  let slides = document.getElementsByClassName("mySlides");
+				  let dots = document.getElementsByClassName("dot");
+				  for (i = 0; i < slides.length; i++) {
+					slides[i].style.display = "none";  
+				  }
+				  slideIndex++;
+				  if (slideIndex > slides.length) {slideIndex = 1}    
+				  for (i = 0; i < dots.length; i++) {
+					dots[i].className = dots[i].className.replace(" active", "");
+				  }
+				  slides[slideIndex-1].style.display = "block";  
+				  dots[slideIndex-1].className += " active";
+				  setTimeout(showSlides, 3000); // Change image every 3 seconds
+				}
+				</script>
+
+        	<div class="links">
+
+				<div class="row">
+					<div class="Left"><img class="Centre" src="images/Untitled-1.png"></div>
+					<div class="Right">
+						<p class="TabPad">
+							
+							<h1>Art of Alphonce Muller </h1>
+							<p>
+								Learn More about one of the founding members of the Meili Missions to Neumonde from his notes and sketches of the planet’s native wildlife. Visit one of our galleries to see examples of his work in person for a limited time.
+							</p>
+							<br><br>
+							<a href="Alphonce.html" class="SeeMore">Learn More</a>
+						</p>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="Left"><img class="Centre" src="images/LearnOnline.jpg" border="3"></div>
+					<div class="Right">
+						<p class="TabPad">
+								<br>
+								<a href="Online.html" class="SeeMore">Learn Online</a>
+								<br><br>
+								Learn anywhere and anytime with our collection of information online.
+						</p>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="Left">
+						<img class="Centre" src="images/Shop.jpg"  border="3">
+						<p class="TabPad">
+								<br>
+								<a href="Shop.html" class="SeeMore">Store</a>
+								<br><br>
+								Our gift shop, wherever in the system you are. 
+						</p>
+					</div>
+					<div class="Right">
+						<img class="Centre" src="images/VisitUs.jpg" border="3" >
+						<p class="TabPad">
+								<br>							
+								<a href="Visit.html" class="SeeMore">Visit Us</a>
+								<br><br>
+								Visit us at either any of our permanent locations or temporary installations across Sol.
+
+						</p>
+					</div>
+				</div>
+
+				<!-- </div>
+				<div class="row">
+					<div class="Left"><img class="Centre" src="https://via.placeholder.com/100" border="5"></div>
+					<div class="Right">
+						<p class="TabPad">
+							<a href="#" class="SeeMore">About Us</a>
+								<br><br>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, voluptates. Itaque corrupti architecto perferendis odio iste, repellat voluptates similique deserunt delectus assumenda? Sit eius expedita sunt molestias! Laborum, distinctio porro?
+						</p>
+					</div>
+				</div> -->
+	
+				
+	<!--end the main body-->			
+    </div>
+    <!--Footer-->		
+    <div class="footer">
+    	<a href="Neomonde.html" style="text-decoration: none;"><h2 class="white">Neumonde Museum</h2></a>
+        <h3 class="white" >Jaylyn Escobar <a href="https://jmesc0.github.io" target="_blank" class="NoBlue">Jmesco.com</a> 2023</h3>
+    	<!--EndFooter-->
+	</div>
+</div></div></body>
+</html>

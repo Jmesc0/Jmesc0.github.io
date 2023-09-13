@@ -1,0 +1,53 @@
+/* Fonts - Margins  */
+body {
+    font-family: Pacifico, Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+p {
+    font-family: Work Sans, Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    font-weight: normal;	
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-weight: normal;
+}
+
+/* Rid of the blue line for links, replaces with white */
+.NoBlue {
+    display: block;
+    color: white;
+    text-decoration: none;
+}		
+/* hover colour */
+.NoBlue:hover:not(.active) {
+    color: rgba(115,115,115,1.00);
+}
+
+.NoBlueImg {
+    display: block;
+    color: white;
+    text-decoration: none;
+}		
+/* hover colour */
+.NoBlueImg:hover:not(.active) {
+    color: rgba(189,167,225,1.00);
+}
+
+/* Pads left */
+.TabPad {  
+    padding-left: 5px;
+
+/* Pads for return link */
+.ReturnPad {  
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+}
+

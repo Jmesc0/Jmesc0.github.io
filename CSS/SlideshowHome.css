@@ -1,0 +1,91 @@
+/*slideshow*/
+.mySlides {display: none}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  margin: auto;
+  margin-top: 2%;
+  width: fit-content;
+  height: fit-content;
+  border-radius: 19px;
+  border: 5px solid black;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* Caption text */
+.text-caption {
+    color: #f2f2f2;
+    font-size: 20px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;	
+  }
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+  }
+
+/* Container for image text */
+.caption-container-curved {
+  font-size: 2em;
+  text-align: center;
+  background-color: #222;
+  padding-top: 15px;
+  color: white;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;	
+}
+/* Nav Button */
+.PreNxt:hover {
+  background-color: aqua;
+  color: black;
+}
+
+.PreNxt {
+  background-color: #373737;
+  color: white;
+  border-radius: 10px;
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+  cursor: pointer;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 2px;
+  margin-bottom: 10px;
+}
+
+.SeeMore {
+  background-color: #373737;
+  color: white;
+  border-radius: 10px;
+  font-size: 1.75em;
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+  cursor: pointer;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 2px;
+  margin-bottom: 10px;
+}

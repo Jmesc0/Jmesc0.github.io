@@ -1,0 +1,40 @@
+/* Something with the gallery images fitting in the boxes */
+* {
+    box-sizing: border-box;
+}
+
+/* Images */
+/* Causes images to default with a curved edge */
+img {
+	border-radius: 19px;
+	vertical-align: middle;
+}
+
+/* Causes slide images to default with a curved edge and border */
+img.slide {
+    border-radius: 19px;
+    border: 5px solid black;
+}
+img.border{
+	  border: 5px rgba(0,0,0,1.00);
+}
+
+/* If the image doesnt want a curved edge */
+img.NoRound {
+    border-radius: 0%
+}
+
+img.Show {
+	vertical-align: middle;
+	border-radius: 10px 10px 0px 0px;
+
+	width: auto;
+	height: auto;
+	max-width: 100%;
+	max-height: 80vh;
+}
+
+video.Show {
+	vertical-align: middle;
+	border-radius: 10px 10px 0px 0px;
+}

@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Jmesco</title>
+    <meta name="viewport" content="width=device-width, initial-scale=.8">	
+    <link rel="stylesheet" href="CSS/Images.css">
+	<link rel="stylesheet" href="CSS/Text.css">
+	<link rel="stylesheet" href="CSS/BodyLayout.css">
+	<link rel="stylesheet" href="CSS/NavbarButton.css">
+	<link rel="stylesheet" href="CSS/PopUpMenu.css">
+	<link rel="stylesheet" href="CSS/SlideshowHome.css">
+	<link rel="stylesheet" href="CSS/Gallery.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work Sans">
+
+	<style>
+
+    </style> </head> 
+
+    <body><div id="back"><div id="small">
+        
+        <!--slidout memu-->
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&laquo;</a>
+            <div class="overlay-content">
+    	
+				<div class="menu">
+                    <h1>Jmesco</h1>	
+                    <img src="Images/Jmesco_PFP.jpg" alt="PFP" width="100%" border="5">
+                      
+					<h2 class="TabPad" >
+						<i>« Je suis comme je suis, et cela me suffit. »</i>
+						<br>
+                    </h2>	
+                    
+                    
+					<p class="TabPad" style="font-size: 1.3em;"> 	
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Maxime eum aut perspiciatis quisquam soluta. 
+                            Iusto consequatur porro non recusandae eius eos labore sed, ea nihil laudantium cum amet suscipit qui?
+                    </p>
+                       
+                        <ul> <!--beginning of outer list -->
+                            <li><a class="NoBlue" href="index.html"><p class="ReturnPad">Home</p></a></li>
+                            <li><a class="NoBlue" href="GD.html"><p class="ReturnPad"> Graphic Design</p></a> 
+                                <ul> <!--beginning of first nested list-->
+                                    <li><a class="NoBlue" href="Bahookie.html"><p class="ReturnPad">Bahookie Soap</p></a></li>
+                                </ul></li>    
+                            <li><a class="NoBlue" href="Il.html"><p class="ReturnPad">Illustrations</p</a></li>  
+                            <li><a class="NoBlue" href="MakerSpace.html"><p class="ReturnPad">Makers Matrix</p></a></li>
+                        <ul> <!-- end outer list -->
+
+				</div>  
+            </div>
+        </div>
+
+        <!--Banner-->
+        <div class="ban"><img src="Images/Banner.jpg" width="100%" class="NoRound"></div>
+
+        <!--Nav-->
+        <div id="navbar">
+            <a span style="cursor:pointer" onclick="openNav()">&raquo;</span> </a>  
+            <script>
+                 function openNav() {
+                    document.getElementById("myNav").style.width = "498px";
+                    }
+				
+                function closeNav() {
+                    document.getElementById("myNav").style.width = "0%";
+                    }
+            </script>
+        <script>
+                window.onscroll = function() {myFunction()};
+                
+                var navbar = document.getElementById("navbar");
+                var sticky = navbar.offsetTop;
+                
+                function myFunction() {
+                  if (window.pageYOffset >= sticky) {
+                    navbar.classList.add("sticky")
+                  } else {
+                    navbar.classList.remove("sticky");
+                  }
+                }
+        </script>    
+        <!--Nav end-->    
+        </div>
+        
+        <!--Main-->
+        <div class="main">
+
+                <!--slideshow-->
+                <div class="slideshow-container">
+
+                        <!--allows arrow keys for nav-->
+                        <script> 
+                        document.addEventListener('keydown', function(event) {
+                            if(event.keyCode == 37) {
+                                plusSlides(-1)
+                            }
+                            else if(event.keyCode == 39) {
+                                plusSlides(1)
+                            }
+                        });
+                        </script>
+
+                        <div class="mySlides fade">
+                            <img class="Show" src="Images/Main/Cirno.jpg">
+                            <div class="caption-container-curved">
+                                <a onclick="plusSlides(-1)" class="PreNxt">&laquo; </a>
+                                Cirno
+                                <a onclick="plusSlides(1)" class="PreNxt">&raquo; </a>
+                            </div>
+                        </div>
+                        
+                        <div class="mySlides fade">
+                            <img class="Show" src="Images/Main/SinAntRender.jpg">
+                            <div class="caption-container-curved">
+                                <a onclick="plusSlides(-1)" class="PreNxt">&laquo; </a> 
+                                Sinfonia Antartica
+                                <a onclick="plusSlides(1)" class="PreNxt"> &raquo;</a>
+                            </div>
+                        </div>
+                        
+                        <div class="mySlides fade">
+                            <img class="Show" src="Images/Main/Tentarex.jpg">
+                            <div class="caption-container-curved">
+                                <a onclick="plusSlides(-1)" class="PreNxt">&laquo; </a> 
+                                Tentarex
+                                <a onclick="plusSlides(1)" class="PreNxt"> &raquo;</a>
+                            </div>
+                        </div>
+  
+                        <script>
+                                var slideIndex = 1;
+                                showSlides(slideIndex);
+                                
+                                function plusSlides(n) {
+                                  showSlides(slideIndex += n);
+                                }
+                                
+                                function currentSlide(n) {
+                                  showSlides(slideIndex = n);
+                                }
+                                
+                                function showSlides(n) {
+                                  var i;
+                                  var slides = document.getElementsByClassName("mySlides");
+                                  var dots = document.getElementsByClassName("dot");
+                                  if (n > slides.length) {slideIndex = 1}    
+                                  if (n < 1) {slideIndex = slides.length}
+                                  for (i = 0; i < slides.length; i++) {
+                                      slides[i].style.display = "none";  
+                                  }
+                                  for (i = 0; i < dots.length; i++) {
+                                      dots[i].className = dots[i].className.replace(" active", "");
+                                  }
+                                  slides[slideIndex-1].style.display = "block";  
+                                  dots[slideIndex-1].className += " active";
+                                }
+                        </script>                    
+                </div>
+
+                <!--gal-->
+                <div id="gallery">
+                    <h1>Gallery</h1>
+					<div class="row">
+
+						<div class="column">
+							<div id="parent_div_1"> <div class="containerSub"> <a href="Bahookie.html" > 
+          					<img src="Images/TN/BahookieYogurtTN.jpg" alt="PlaceHolder" style="width: 300px;">
+         					<div class="overlaySub"><div class="text">Bahookie Soap</div>
+          					</div></a></div></div>
+						</div>
+
+						<div class="column">
+							<div id="parent_div_1"> <div class="containerSub"> <a href="Smollen.html" > 
+          					<img src="Images/TN/Smollen.jpg" alt="PlaceHolder" style="width: 300px;">
+         					<div class="overlaySub"><div class="text">Smollen</div>
+          					</div></a></div></div>
+						</div>
+                        
+                        <div class="column">
+							<div id="parent_div_1"> <div class="containerSub"> <a href="Qterasu.html" > 
+          					<img src="Images/TN/QTer.jpg" alt="PlaceHolder" style="width: 300px;">
+         					<div class="overlaySub"><div class="text">Qterasu</div>
+          					</div></a></div></div>
+						</div>
+
+                        <div class="column">
+							<div id="parent_div_1"> <div class="containerSub"> <a href="JACARP.html" > 
+          					<img src="Images/TN/JACARP.jpg" alt="PlaceHolder" style="width: 300px;">
+         					<div class="overlaySub"><div class="text">JACARP</div>
+          					</div></a></div></div>
+						</div>
+
+                        <div class="column">
+							<div id="parent_div_1"> <div class="containerSub"> <a href="AMDAI.html" > 
+          					<img src="Images/TN/AMDTN.jpg" alt="PlaceHolder" style="width: 300px;">
+         					<div class="overlaySub"><div class="text">AMD Article</div>
+          					</div></a></div></div>
+						</div>
+
+                        <div class="column">
+							<div id="parent_div_1"> <div class="containerSub"> <a href="NewYorkerChess.html" > 
+          					<img src="Images/TN/NewYorkerCoverTN.jpg" alt="PlaceHolder" style="width: 300px;">
+         					<div class="overlaySub"><div class="text">New Yorker Cover</div>
+          					</div></a></div></div>
+						</div>
+
+                        <div class="column">
+							<div id="parent_div_1"> <div class="containerSub"> <a href="PamRocks.html" > 
+          					<img src="Images/TN/PamRocksTN.jpg" alt="PlaceHolder" style="width: 300px;">
+         					<div class="overlaySub"><div class="text">Pamorama Rockets</div>
+          					</div></a></div></div>
+						</div>
+                        
+                        <div class="column">
+							<div id="parent_div_1"> <div class="containerSub"> <a href="SinAnt.html" > 
+          					<img src="Images/TN/SinAntTN.jpg" alt="PlaceHolder" style="width: 300px;">
+         					<div class="overlaySub"><div class="text">Sinfonia Antartica</div>
+          					</div></a></div></div>
+						</div>
+                        
+                        <div class="column">
+							<div id="parent_div_1"> <div class="containerSub"> <a href="Cirno.html" > 
+          					<img src="Images/TN/CirnoTN.jpg" alt="PlaceHolder" style="width: 300px;">
+         					<div class="overlaySub"><div class="text">Cirno</div>
+          					</div></a></div></div>
+						</div>
+                        
+                        <div class="column">
+							<div id="parent_div_1"> <div class="containerSub"> <a href="PondPattern.html" > 
+          					<img src="Images/TN/PondPatternTN.jpg" alt="PlaceHolder" style="width: 300px;">
+         					<div class="overlaySub"><div class="text">Pond Pattern</div>
+          					</div></a></div></div>
+						</div>
+
+                        <div class="column">
+							<div id="parent_div_1"> <div class="containerSub"> <a href="Rumia.html" > 
+          					<img src="Images/TN/RumiaTN.jpg" alt="PlaceHolder" style="width: 300px;">
+         					<div class="overlaySub"><div class="text">Rumia</div>
+          					</div></a></div></div>
+						</div>
+
+                        <div class="column">
+							<div id="parent_div_1"> <div class="containerSub"> <a href="Tentarex.html" > 
+          					<img src="Images/TN/TentarexTN.jpg" alt="PlaceHolder" style="width: 300px;">
+         					<div class="overlaySub"><div class="text">Tentarex</div>
+          					</div></a></div></div>
+						</div>
+
+                        <div class="column">
+							<div id="parent_div_1"> <div class="containerSub"> <a href="Stelle.html" > 
+          					<img src="Images/TN/StellItTN.jpg" alt="PlaceHolder" style="width: 300px;">
+         					<div class="overlaySub"><div class="text">Stelle</div>
+          					</div></a></div></div>
+						</div>
+
+                        <div class="column">
+							<div id="parent_div_1"> <div class="containerSub"> <a href="Falling.html" > 
+          					<img src="Images/TN/FallingTN.jpg" alt="PlaceHolder" style="width: 300px;">
+         					<div class="overlaySub"><div class="text">Falling</div>
+          					</div></a></div></div>
+						</div>
+
+                        <div class="column">
+							<div id="parent_div_1"> <div class="containerSub"> <a href="Grace.html" > 
+          					<img src="Images/TN/GraceTN.jpg" alt="PlaceHolder" style="width: 300px;">
+         					<div class="overlaySub"><div class="text">Grace</div>
+          					</div></a></div></div>
+						</div>
+
+                        <div class="column">
+							<div id="parent_div_1"> <div class="containerSub"> <a href="BusStop.html" > 
+          					<img src="Images/TN/BusStopTN.jpg" alt="PlaceHolder" style="width: 300px;">
+         					<div class="overlaySub"><div class="text">Bus Stop</div>
+          					</div></a></div></div>
+						</div>
+
+                        <div class="column">
+							<div id="parent_div_1"> <div class="containerSub"> <a href="Cave.html" > 
+          					<img src="Images/TN/CaveTN.jpg" alt="PlaceHolder" style="width: 300px;">
+         					<div class="overlaySub"><div class="text">Cave</div>
+          					</div></a></div></div>
+						</div>
+
+                        <div class="column">
+							<div id="parent_div_1"> <div class="containerSub"> <a href="Clandistine.html" > 
+          					<img src="Images/TN/ClandestineTN.jpg" alt="PlaceHolder" style="width: 300px;">
+         					<div class="overlaySub"><div class="text">Clandestine</div>
+          					</div></a></div></div>
+						</div>
+
+                        <div class="column">
+							<div id="parent_div_1"> <div class="containerSub"> <a href="DeadTree.html" > 
+          					<img src="Images/TN/DeadTreeTN.jpg" alt="PlaceHolder" style="width: 300px;">
+         					<div class="overlaySub"><div class="text">Dead Tree</div>
+          					</div></a></div></div>
+						</div>
+
+                        <div class="column">
+							<div id="parent_div_1"> <div class="containerSub"> <a href="Egg.html" > 
+          					<img src="Images/TN/EggTN.jpg" alt="PlaceHolder" style="width: 300px;">
+         					<div class="overlaySub"><div class="text">Egg</div>
+          					</div></a></div></div>
+						</div>
+
+                        <div class="column">
+							<div id="parent_div_1"> <div class="containerSub"> <a href="Frog.html" > 
+          					<img src="Images/TN/FrogGirlTN.jpg" alt="PlaceHolder" style="width: 300px;">
+         					<div class="overlaySub"><div class="text">Frog</div>
+          					</div></a></div></div>
+						</div>
+
+                        <div class="column">
+							<div id="parent_div_1"> <div class="containerSub"> <a href="Geometry.html" > 
+          					<img src="Images/TN/GeoNightTN.jpg" alt="PlaceHolder" style="width: 300px;">
+         					<div class="overlaySub"><div class="text">Geometry Night</div>
+          					</div></a></div></div>
+						</div>
+
+                        <div class="column">
+							<div id="parent_div_1"> <div class="containerSub"> <a href="GrapeTree.html" > 
+          					<img src="Images/TN/GrapeTreeTN.jpg" alt="PlaceHolder" style="width: 300px;">
+         					<div class="overlaySub"><div class="text">Grape Tree</div>
+          					</div></a></div></div>
+						</div>
+
+                        <div class="column">
+							<div id="parent_div_1"> <div class="containerSub"> <a href="Hallway.html" > 
+          					<img src="Images/TN/HallwayTN.jpg" alt="PlaceHolder" style="width: 300px;">
+         					<div class="overlaySub"><div class="text">Hallway</div>
+          					</div></a></div></div>
+						</div>
+
+                        <div class="column">
+							<div id="parent_div_1"> <div class="containerSub"> <a href="Late.html" > 
+          					<img src="Images/TN/LateTN.jpg" alt="PlaceHolder" style="width: 300px;">
+         					<div class="overlaySub"><div class="text">Late</div>
+          					</div></a></div></div>
+						</div>
+
+                        <div class="column">
+							<div id="parent_div_1"> <div class="containerSub"> <a href="Nijami.html" > 
+          					<img src="Images/TN/NijamiTN.jpg" alt="PlaceHolder" style="width: 300px;">
+         					<div class="overlaySub"><div class="text">Najimi</div>
+          					</div></a></div></div>
+						</div>
+
+                        <div class="column">
+							<div id="parent_div_1"> <div class="containerSub"> <a href="Painting_1_Fin.html" > 
+          					<img src="Images/TN/Painting_1_FinTN.jpg" alt="PlaceHolder" style="width: 300px;">
+         					<div class="overlaySub"><div class="text">Painting 1 Fin</div>
+          					</div></a></div></div>
+						</div>
+
+                        <div class="column">
+							<div id="parent_div_1"> <div class="containerSub"> <a href="Painting_1_Mid.html" > 
+          					<img src="Images/TN/Painting_1_MidTN.jpg" alt="PlaceHolder" style="width: 300px;">
+         					<div class="overlaySub"><div class="text">Painting 1 Mid</div>
+          					</div></a></div></div>
+						</div>
+
+                        <div class="column">
+							<div id="parent_div_1"> <div class="containerSub"> <a href="Paintings_Summer_2021.html" > 
+          					<img src="Images/TN/PaintingsSummer2021TN.jpg" alt="PlaceHolder" style="width: 300px;">
+         					<div class="overlaySub"><div class="text">Summer Paintings 2021</div>
+          					</div></a></div></div>
+						</div>
+
+                        <div class="column">
+							<div id="parent_div_1"> <div class="containerSub"> <a href="PokemonHGSS.html" > 
+          					<img src="Images/TN/PKMNHGSSTN.jpg" alt="PlaceHolder" style="width: 300px;">
+         					<div class="overlaySub"><div class="text">PKMN HG/SS</div>
+          					</div></a></div></div>
+						</div>
+
+                        <div class="column">
+							<div id="parent_div_1"> <div class="containerSub"> <a href="PokemonSwSh.html" > 
+          					<img src="Images/TN/PKMNSWSHTN.jpg" alt="PlaceHolder" style="width: 300px;">
+         					<div class="overlaySub"><div class="text">PKMN Sw/Sh</div>
+          					</div></a></div></div>
+						</div>
+                        
+
+                        <!--Example Code / Old Links
+						<div class="column">
+							<div id="parent_div_1"> <div class="containerSub"> <a href="PlaceHolder.html" > 
+          					<img src="Images/TN/PlaceHolder.jpg" alt="PlaceHolder" style="width: 300px;">
+         					<div class="overlaySub"><div class="text">PlaceHolder</div>
+          					</div></a></div></div>
+						</div>
+
+                        <div class="column">
+							<div id="parent_div_1"> <div class="containerSub"> <a href="Cirno.html" > 
+          					<img src="Images/TN/Cirno.jpg" alt="Cirno" style="width: 300px;">
+         					<div class="overlaySub"><div class="text">Cirno</div>
+          					</div></a></div></div>	
+						</div>
+                        
+                        <div class="column">
+							<div id="parent_div_1"> <div class="containerSub"> <a href="Rumia.html" > 
+          					<img src="Images/TN/Rumia.JPG" alt="Rumia" style="width: 300px;">
+         					<div class="overlaySub"><div class="text">Rumia</div>
+          					</div></a></div></div>	
+                        </div>
+                        
+                        <div class="column">
+							<div id="parent_div_1"> <div class="containerSub"> <a href="PKMNSwSh.html" > 
+          					<img src="Images/TN/PKMNSwSh.jpg" alt="PKMNSwSh" style="width: 300px;">
+         					<div class="overlaySub"><div class="text">PKMN Sw/Sh</div>
+          					</div></a></div></div>	
+                        </div>
+
+                        <div class="column">
+							<div id="parent_div_1"> <div class="containerSub"> <a href="Najimi.html" > 
+          					<img src="Images/TN/Najimi.jpg" alt="Najimi" style="width: 300px;">
+         					<div class="overlaySub"><div class="text">Najimi</div>
+          					</div></a></div></div>
+						</div>
+                        
+                        <div class="column">
+							<div id="parent_div_1"> <div class="containerSub"> <a href="Smollen.html" > 
+          					<img src="Images/TN/Smollen.jpg" alt="Smollen" style="width: 300px;">
+         					<div class="overlaySub"><div class="text">Smollen</div>
+          					</div></a></div></div>
+                        </div>
+                        
+                        <div class="column">
+							<div id="parent_div_1"> <div class="containerSub"> <a href="Grace.html" > 
+          					<img src="Images/TN/Grace.jpg" alt="Grace" style="width: 300px;">
+         					<div class="overlaySub"><div class="text">Grace</div>
+          					</div></a></div></div>
+                        </div>
+                        
+                        <div class="column">
+							<div id="parent_div_1"> <div class="containerSub"> <a href="FrogHat.html" > 
+          					<img src="Images/TN/FrogHat.jpg" alt="FrogHat" style="width: 300px;">
+         					<div class="overlaySub"><div class="text">Frog Hat</div>
+          					</div></a></div></div>
+                        </div>
+                        
+                        <div class="column">
+							<div id="parent_div_1"> <div class="containerSub"> <a href="QTer.html" > 
+          					<img src="Images/TN/QTer.jpg" alt="QTer" style="width: 300px;">
+         					<div class="overlaySub"><div class="text">QTer</div>
+          					</div></a></div></div>
+                        </div>
+                        
+                        <div class="column">
+							<div id="parent_div_1"> <div class="containerSub"> <a href="GrapeTree.html" > 
+          					<img src="Images/TN/GrapeTree.jpg" alt="Grapeee" style="width: 300px;">
+         					<div class="overlaySub"><div class="text">Grape</div>
+          					</div></a></div></div>
+                        </div>
+                        
+                        <div class="column">
+							<div id="parent_div_1"> <div class="containerSub"> <a href="Corner.html" > 
+          					<img src="Images/TN/Corner.jpg" alt="Corner" style="width: 300px;">
+         					<div class="overlaySub"><div class="text">Corner</div>
+          					</div></a></div></div>
+                        </div>
+                        
+                        <div class="column">
+							<div id="parent_div_1"> <div class="containerSub"> <a href="RSERoute111.html" > 
+          					<img src="Images/TN/RSERoute111.jpg" alt="RSERoute111" style="width: 300px;">
+         					<div class="overlaySub"><div class="text">RSE Route 111</div>
+          					</div></a></div></div>
+                        </div>
+                        
+                        <div class="column">
+							<div id="parent_div_1"> <div class="containerSub"> <a href="PKMNHGSS.html" > 
+          					<img src="Images/TN/PKMNHGSS.jpg" alt="PKMNHGSS" style="width: 300px;">
+         					<div class="overlaySub"><div class="text">PKMN HG/SS</div>
+          					</div></a></div></div>
+                        </div>
+                        
+                        <div class="column">
+							<div id="parent_div_1"> <div class="containerSub"> <a href="Clandestine.html" > 
+          					<img src="Images/TN/Clandestine.jpg" alt="Clandestine" style="width: 300px;">
+         					<div class="overlaySub"><div class="text" Style="font-size: 50px;">Clandestine</div>
+          					</div></a></div></div>
+                        </div>
+                        
+                        <div class="column">
+							<div id="parent_div_1"> <div class="containerSub"> <a href="Cave.html" > 
+          					<img src="Images/TN/Cave.jpg" alt="Cave" style="width: 300px;">
+         					<div class="overlaySub"><div class="text">Cave</div>
+          					</div></a></div></div>
+                        </div>
+                        
+                        <div class="column">
+							<div id="parent_div_1"> <div class="containerSub"> <a href="Late.html" > 
+          					<img src="Images/TN/Late.jpg" alt="Late" style="width: 300px;">
+         					<div class="overlaySub"><div class="text">Late</div>
+          					</div></a></div></div>
+                        </div>
+                        
+                        <div class="column">
+							<div id="parent_div_1"> <div class="containerSub"> <a href="Egg.html" > 
+          					<img src="Images/TN/Egg.jpg" alt="Egg" style="width: 300px;">
+         					<div class="overlaySub"><div class="text">Egg</div>
+          					</div></a></div></div>
+                        </div>
+                        
+                        <div class="column">
+							<div id="parent_div_1"> <div class="containerSub"> <a href="Rain.html" > 
+          					<img src="Images/TN/Rain.jpg" alt="Rain" style="width: 300px;">
+         					<div class="overlaySub"><div class="text">Rain</div>
+          					</div></a></div></div>
+                        </div>
+                        
+                        <div class="column">
+							<div id="parent_div_1"> <div class="containerSub"> <a href="JACARP.html" > 
+          					<img src="Images/TN/JACARP.jpg" alt="JACARP" style="width: 300px;">
+         					<div class="overlaySub"><div class="text">JACARP</div>
+          					</div></a></div></div>
+                        </div>
+                        
+                        <div class="column">
+							<div id="parent_div_1"> <div class="containerSub"> <a href="DeadTree.html" > 
+          					<img src="Images/TN/DeadTree.jpg" alt="DeadTree" style="width: 300px;">
+         					<div class="overlaySub"><div class="text">Dead Tree</div>
+          					</div></a></div></div>
+                        </div>
+
+                        <div class="column">
+							<div id="parent_div_1"> <div class="containerSub"> <a href="Hallway.html" > 
+          					<img src="Images/TN/Hallway.jpg" alt="Hallway" style="width: 300px;">
+         					<div class="overlaySub"><div class="text">Hallway</div>
+          					</div></a></div></div>
+                        </div>
+
+                        <div class="column">
+							<div id="parent_div_1"> <div class="containerSub"> <a href="Painting_1_Fin.html" > 
+          					<img src="Images/TN/Painting_1_Fin.jpg" alt="Painting_1_Fin" style="width: 300px;">
+         					<div class="overlaySub"><div class="text">Final</div>
+          					</div></a></div></div>
+                        </div>
+
+                        <div class="column">
+							<div id="parent_div_1"> <div class="containerSub"> <a href="Painting_1_Mid.html" > 
+          					<img src="Images/TN/Painting_1_Mid.jpg" alt="Painting_1_Mid" style="width: 300px;">
+         					<div class="overlaySub"><div class="text">Boat</div>
+          					</div></a></div></div>
+                        </div>
+                        
+                        <div class="column">
+							<div id="parent_div_1"> <div class="containerSub"> <a href="Lake.html" > 
+          					<img src="Images/TN/Lake.jpg" alt="Lake" style="width: 300px;">
+         					<div class="overlaySub"><div class="text">Lake</div>
+          					</div></a></div></div>
+                        </div>
+
+                        <div class="column">
+							<div id="parent_div_1"> <div class="containerSub"> <a href="Geo.html" > 
+          					<img src="Images/TN/Geo.jpg" alt="Geo" style="width: 300px;">
+         					<div class="overlaySub"><div class="text">Geo</div>
+          					</div></a></div></div>
+                        </div>
+
+                        <div class="column">
+							<div id="parent_div_1"> <div class="containerSub"> <a href="PaintingS2021.html" > 
+          					<img src="Images/TN/PaintingsSummer2021.jpg" alt="Paintings Summer 2021" style="width: 300px;">
+         					<div class="overlaySub"><div class="text">Summer Paintings 2021</div>
+          					</div></a></div></div>
+                        </div>
+                    -->
+
+                    </div>
+                </div>  
+
+                <div id="gallery">
+                    <h1>See More :</h1>		
+                        <a href="" class="SeeMore">Graphic Design</a>
+                        <a href="" class="SeeMore">Illustrations</a>
+                        <a href="" class="SeeMore">Makers Matrix</a>
+                        <a href="" class="SeeMore">Everythingn Else</a>
+                </div>    
+
+        </div>        
+
+        <!--Footer-->
+        <div class="footer">
+            <h2><b>Jmesco 2018-23</b></h2>
+            <!--<h3><a href="#.html" target="_blank">Email Link (loops)</a></h3>-->
+            <!--End Footer-->
+        </div>       
+
+    </div></div></body>
+
+</html>
