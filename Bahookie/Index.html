@@ -44,6 +44,49 @@ a {
 .menu {
   display: none;
 }
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #688974;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 90%;
+  min-width: none;
+  max-width: 800px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
 </style>
 </head>
 <body>
@@ -114,24 +157,119 @@ a {
     <h5 class="w3-center w3-padding-28"><span style="font-family: Freestyle Script; font-size: 350%;">Products</span></h5>
 
       <div class="w3-row-padding">
-        <div class="w3-col m6 w3-2020-fired-brick w3-hover-green w3-border w3-border-2020-peach-nougat w3-hover-border-green w3-round-large" style="padding-bottom:5px; padding-top: 5px;">
+        
+        <button id="myBtn1" class="w3-col m6 w3-2020-fired-brick w3-hover-green w3-border w3-border-2020-peach-nougat w3-hover-border-green w3-round-large" style="padding-bottom:5px; padding-top: 5px;">
           <img src="BahookieYogert.jpg" style="width:100%">
-          <p Style="text-align: center;">Soap Bars ($7)</p>
+          <p Style="text-align: center;">Soap Bars</p>
+        </button>
+        <!-- The Modal -->
+        <div id="myModal1" class="modal">
+          <!-- Modal content -->
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <img src="BahookieYogert.jpg" style="width: 100%;">
+            <h1 style="text-align: center; padding-bottom: 0px;"><b>Soap Bars</b><br>$7</h1>
+            <h3 style="margin-left: 5%; margin-right: 5%;">Basic soap bars in various rotating scents.</h3>
+          </div>
         </div>
-        <div class="w3-col m6 w3-2020-fired-brick w3-hover-green w3-border w3-border-2020-peach-nougat w3-hover-border-green w3-round-large" style="padding-bottom:5px; padding-top: 5px;">
+
+        <button id="myBtn2" class="w3-col m6 w3-2020-fired-brick w3-hover-green w3-border w3-border-2020-peach-nougat w3-hover-border-green w3-round-large" style="padding-bottom:5px; padding-top: 5px;">
           <img src="BahookieYogert.jpg" style="width:100%">
-          <p Style="text-align: center;">Soap Bars ($7)</p>
+          <p Style="text-align: center;">Specialty Soaps</p>
+        </button>
+        <div id="myModal2" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <img src="BahookieYogert.jpg" style="width: 100%;">
+            <h1 style="text-align: center; padding-bottom: 0px;"><b>Specialty Soaps</b><br>$#-#</h1>
+            <h3 style="margin-left: 5%; margin-right: 5%;">Anything other than basic soap bars. Includes simple soaps, dish soaps, shampoo bars and more.</h3>
+          </div>
         </div>
-        <div class="w3-col m6 w3-2020-fired-brick w3-hover-green w3-border w3-border-2020-peach-nougat w3-hover-border-green w3-round-large" style="padding-bottom:5px; padding-top: 5px;">
+
+        <button id="myBtn3" class="w3-col m6 w3-2020-fired-brick w3-hover-green w3-border w3-border-2020-peach-nougat w3-hover-border-green w3-round-large" style="padding-bottom:5px; padding-top: 5px;">
           <img src="BahookieYogert.jpg" style="width:100%">
-          <p Style="text-align: center;">Soap Bars ($7)</p>
+          <p Style="text-align: center;">Scrubs</p>
+        </button>
+        <div id="myModal3" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <img src="BahookieYogert.jpg" style="width: 100%;">
+            <h1 style="text-align: center; padding-bottom: 0px;"><b>Scrubs</b><br>$#-#</h1>
+            <h3 style="margin-left: 5%; margin-right: 5%;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi natus totam architecto illum placeat ex voluptatibus dicta, mollitia, pariatur, esse et. Ad quisquam animi non quae, facilis ipsam omnis molestiae!</h3>
+          </div>
         </div>
-        <div class="w3-col m6 w3-2020-fired-brick w3-hover-green w3-border w3-border-2020-peach-nougat w3-hover-border-green w3-round-large" style="padding-bottom:5px; padding-top: 5px;">
+
+        <button id="myBtn4" class="w3-col m6 w3-2020-fired-brick w3-hover-green w3-border w3-border-2020-peach-nougat w3-hover-border-green w3-round-large" style="padding-bottom:5px; padding-top: 5px;">
           <img src="BahookieYogert.jpg" style="width:100%">
-          <p Style="text-align: center;">Soap Bars ($7)</p>
+          <p Style="text-align: center;">Candles</p>
+        </button>
+        <div id="myModal4" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <img src="BahookieYogert.jpg" style="width: 100%;">
+            <h1 style="text-align: center; padding-bottom: 0px;"><b>Candles</b><br>$#-#</h1>
+            <h3 style="margin-left: 5%; margin-right: 5%;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi natus totam architecto illum placeat ex voluptatibus dicta, mollitia, pariatur, esse et. Ad quisquam animi non quae, facilis ipsam omnis molestiae!</h3>
+          </div>
         </div>
+
+        <button id="myBtn5" class="w3-col m6 w3-2020-fired-brick w3-hover-green w3-border w3-border-2020-peach-nougat w3-hover-border-green w3-round-large" style="padding-bottom:5px; padding-top: 5px;">
+          <img src="BahookieYogert.jpg" style="width:100%">
+          <p Style="text-align: center;">Soap Accessories</p>
+        </button>
+        <div id="myModal5" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <img src="BahookieYogert.jpg" style="width: 100%;">
+            <h1 style="text-align: center; padding-bottom: 0px;"><b>Soap Accessories</b><br>$#-#</h1>
+            <h3 style="margin-left: 5%; margin-right: 5%;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi natus totam architecto illum placeat ex voluptatibus dicta, mollitia, pariatur, esse et. Ad quisquam animi non quae, facilis ipsam omnis molestiae!</h3>
+          </div>
+        </div>
+
+        <!--- View more link - use if modals is odd-->
+        <a href="page" target="_blank" class="w3-col m6 w3-2020-fired-brick w3-hover-green w3-border w3-border-2020-peach-nougat w3-hover-border-green w3-round-large" style="padding-bottom:5px; padding-top: 5px;">
+          <img src="ViewMore.jpg" style="width:100%">
+          <p Style="text-align: center;">View More (comming soon)</p>
+        </a>
+
+        <script>
+          var datamap = new Map([
+              [document.getElementById("myBtn1"), document.getElementById("myModal1")],
+              [document.getElementById("myBtn2"), document.getElementById("myModal2")],
+              [document.getElementById("myBtn3"), document.getElementById("myModal3")],
+              [document.getElementById("myBtn4"), document.getElementById("myModal4")],
+              [document.getElementById("myBtn5"), document.getElementById("myModal5")],
+          ]);
+  
+          datamap.forEach((value, key) => {
+              doModal(key, value);
+          });
+  
+          function doModal(anchor, popupbox) {
+  
+              // Get the <span> element that closes the modal
+              var span = popupbox.getElementsByClassName("close")[0];
+  
+              anchor.addEventListener("click", function (event) {
+                  popupbox.style.display = "block";
+              });
+  
+              span.addEventListener("click", function (event) {
+                  popupbox.style.display = "none";
+              });
+  
+              window.addEventListener("click", function (event) {
+                  if (event.target == popupbox) {
+                      popupbox.style.display = "none";
+                  }
+              });
+          }
+      </script>
+
   </div>
-  <a href="Page" target="_blank"><h5 class="w3-center w3-padding-28" Style="padding-top: 10px;"><span class="w3-tag w3-wide w3-2020-fired-brick w3-hover-green" style="size: 350%;"><b>View More +</b></span></h5></a>  
+
+  <!--view more link - Use when modal is even
+  <a href="Page" target="_blank"><h5 class="w3-center w3-padding-28" Style="padding-top: 10px;"><span class="w3-tag w3-wide w3-2020-fired-brick w3-hover-green" style="size: 350%;"><b>View More +</b></span></h5></a>-->
+  <br> 
 
 </div>
 
