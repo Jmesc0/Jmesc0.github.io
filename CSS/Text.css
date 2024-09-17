@@ -24,6 +24,11 @@ h2 {
     color: white;
     text-decoration: none;
 }		
+
+.NoBlue2 {
+    color: white;
+}	
+
 /* hover colour */
 .NoBlue:hover:not(.active) {
     color: rgba(115,115,115,1.00);

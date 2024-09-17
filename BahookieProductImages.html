@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Jmesco/Bahookie/ProPhotos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=.8">	
+    <link rel="stylesheet" href="CSS/Images.css">
+	<link rel="stylesheet" href="CSS/Text.css">
+	<link rel="stylesheet" href="CSS/BodyLayout.css">
+	<link rel="stylesheet" href="CSS/NavbarButton.css">
+	<link rel="stylesheet" href="CSS/PopUpMenu.css">
+	<link rel="stylesheet" href="CSS/SlideshowHome.css">
+	<link rel="stylesheet" href="CSS/Gallery.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work Sans">
+
+	<style>
+
+    </style> </head> 
+
+    <body><div id="back"><div id="small">
+        
+        <!--slidout memu-->
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&laquo;</a>
+            <div class="overlay-content">
+    	
+				<div class="menu">
+                    <h1>Jmesco</h1>	
+                    <img src="Images/Jmesco_PFP.jpg" alt="PFP" width="100%" border="5">
+                      
+					<h2 class="TabPad" >
+						<i>« Je suis comme je suis, et cela me suffit. »</i>
+						<br>
+                    </h2>	
+                    
+                    <!-- about me or other body text
+					<p class="TabPad"> 	
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Maxime eum aut perspiciatis quisquam soluta. 
+                            Iusto consequatur porro non recusandae eius eos labore sed, ea nihil laudantium cum amet suscipit qui?
+                    </p>
+                    -->    
+                        <ul> <!--beginning of outer list -->
+                            <li><a class="NoBlue" href="index.html"><p class="ReturnPad">Home</p></a></li>
+                            <li><a class="NoBlue" href="GD.html"><p class="ReturnPad"> Graphic Design</p></a> 
+                                <ul> <!--beginning of first nested list-->
+                                    <li><a class="NoBlue" href="Bahookie.html"><p class="ReturnPad">Bahookie Soap</p></a></li>
+                                </ul></li>    
+                            <li><a class="NoBlue" href="Il.html"><p class="ReturnPad">Illustrations</p</a></li>  
+                            <li><a class="NoBlue" href="MakerSpace.html" target="_blank"><p class="ReturnPad">Other</p></a></li>
+                        <ul> <!-- end outer list -->
+
+				</div>  
+            </div>
+        </div>
+
+        <!--Banner-->
+        <div class="ban"><img src="Images/Banner.jpg" width="100%" class="NoRound"></div>
+
+        <!--Nav-->
+        <div id="navbar">
+            <a span style="cursor:pointer" onclick="openNav()">&raquo;</span> </a>  
+            <script>
+                 function openNav() {
+                    document.getElementById("myNav").style.width = "498px";
+                    }
+				
+                function closeNav() {
+                    document.getElementById("myNav").style.width = "0%";
+                    }
+            </script>
+        <script>
+                window.onscroll = function() {myFunction()};
+                
+                var navbar = document.getElementById("navbar");
+                var sticky = navbar.offsetTop;
+                
+                function myFunction() {
+                  if (window.pageYOffset >= sticky) {
+                    navbar.classList.add("sticky")
+                  } else {
+                    navbar.classList.remove("sticky");
+                  }
+                }
+        </script>    
+        <!--Nav end-->    
+        </div>
+        
+        <!--Main-->
+        <div class="main">
+
+                <!--slideshow-->
+                <div class="slideshow-container">
+
+                        <!--allows arrow keys for nav-->
+                        <script> 
+                        document.addEventListener('keydown', function(event) {
+                            if(event.keyCode == 37) {
+                                plusSlides(-1)
+                            }
+                            else if(event.keyCode == 39) {
+                                plusSlides(1)
+                            }
+                        });
+                        </script>
+
+                        <!--For Slides-->
+                        <div class="mySlides fade">
+                            <img class="Show" src="Images/Bahookie/CustomWrappigShowcase.jpg">
+                            <div class="caption-container-curved">
+                                <a onclick="plusSlides(-1)" class="PreNxt">&laquo; </a>
+                                Custom Wrappig Showcase
+                                <a onclick="plusSlides(1)" class="PreNxt">&raquo; </a>
+                            </div>
+                        </div>
+
+                        <div class="mySlides fade">
+                            <img class="Show" src="Images/Bahookie/CustomWrappigShowcase2.jpg">
+                            <div class="caption-container-curved">
+                                <a onclick="plusSlides(-1)" class="PreNxt">&laquo; </a>
+                                Custom Lable Showcase
+                                <a onclick="plusSlides(1)" class="PreNxt">&raquo; </a>
+                            </div>
+                        </div>
+
+                        <div class="mySlides fade">
+                            <img class="Show" src="Images/Bahookie/BackyardHoney.jpg">
+                            <div class="caption-container-curved">
+                                <a onclick="plusSlides(-1)" class="PreNxt">&laquo; </a>
+                                Bakyard Honey
+                                <a onclick="plusSlides(1)" class="PreNxt">&raquo; </a>
+                            </div>
+                        </div>
+
+                        <div class="mySlides fade">
+                            <img class="Show" src="Images/Bahookie/CoffeeCream.jpg">
+                            <div class="caption-container-curved">
+                                <a onclick="plusSlides(-1)" class="PreNxt">&laquo; </a>
+                                Coffee and Cream
+                                <a onclick="plusSlides(1)" class="PreNxt">&raquo; </a>
+                            </div>
+                        </div>
+
+                        <div class="mySlides fade">
+                            <img class="Show" src="Images/Bahookie/happyHour.jpg">
+                            <div class="caption-container-curved">
+                                <a onclick="plusSlides(-1)" class="PreNxt">&laquo; </a>
+                                Happy Hour
+                                <a onclick="plusSlides(1)" class="PreNxt">&raquo; </a>
+                            </div>
+                        </div>
+
+                        <div class="mySlides fade">
+                            <img class="Show" src="Images/Bahookie/CBDPeace.jpg">
+                            <div class="caption-container-curved">
+                                <a onclick="plusSlides(-1)" class="PreNxt">&laquo; </a>
+                                CBD Peace
+                                <a onclick="plusSlides(1)" class="PreNxt">&raquo; </a>
+                            </div>
+                        </div>
+
+                        <div class="mySlides fade">
+                            <img class="Show" src="Images/Bahookie/Roses.jpg">
+                            <div class="caption-container-curved">
+                                <a onclick="plusSlides(-1)" class="PreNxt">&laquo; </a>
+                                Roses
+                                <a onclick="plusSlides(1)" class="PreNxt">&raquo; </a>
+                            </div>
+                        </div>
+
+                        <div class="mySlides fade">
+                            <img class="Show" src="Images/Bahookie/SmallCandle.jpg">
+                            <div class="caption-container-curved">
+                                <a onclick="plusSlides(-1)" class="PreNxt">&laquo; </a>
+                                Small Candles
+                                <a onclick="plusSlides(1)" class="PreNxt">&raquo; </a>
+                            </div>
+                        </div>
+                        
+                        <div class="mySlides fade">
+                            <img class="Show" src="Images/Bahookie/3dBasic.jpg">
+                            <div class="caption-container-curved">
+                                <a onclick="plusSlides(-1)" class="PreNxt">&laquo; </a>
+                                3D Printed Basic Soap Dish
+                                <a onclick="plusSlides(1)" class="PreNxt">&raquo; </a>
+                            </div>
+                        </div>
+
+                        <div class="mySlides fade">
+                            <img class="Show" src="Images/Bahookie/3dCoral.jpg">
+                            <div class="caption-container-curved">
+                                <a onclick="plusSlides(-1)" class="PreNxt">&laquo; </a>
+                                3D Printed Coral Soap Dish
+                                <a onclick="plusSlides(1)" class="PreNxt">&raquo; </a>
+                            </div>
+                        </div>
+                        
+                        <script>
+                                var slideIndex = 1;
+                                showSlides(slideIndex);
+                                
+                                function plusSlides(n) {
+                                  showSlides(slideIndex += n);
+                                }
+                                
+                                function currentSlide(n) {
+                                  showSlides(slideIndex = n);
+                                }
+                                
+                                function showSlides(n) {
+                                  var i;
+                                  var slides = document.getElementsByClassName("mySlides");
+                                  var dots = document.getElementsByClassName("dot");
+                                  if (n > slides.length) {slideIndex = 1}    
+                                  if (n < 1) {slideIndex = slides.length}
+                                  for (i = 0; i < slides.length; i++) {
+                                      slides[i].style.display = "none";  
+                                  }
+                                  for (i = 0; i < dots.length; i++) {
+                                      dots[i].className = dots[i].className.replace(" active", "");
+                                  }
+                                  slides[slideIndex-1].style.display = "block";  
+                                  dots[slideIndex-1].className += " active";
+                                }    
+                        </script>                    
+                </div>
+
+
+                <!--For slides Can delete for Singles Remeber to number the OnClick Slides-->
+                <div id="gallery">
+                    <h1>Slides</h1>
+					<div class="row">
+
+                        <div class="column">
+							<div id="parent_div_1"> <div class="containerSub" onclick="currentSlide(1)" > 
+                            <img class="demo cursor" src="Images/Bahookie/CustomWrappigShowcase.jpg" alt="PlaceHolder" style="width: 300px;">
+         					<div class="overlaySub"><div class="text">Custom Wrappig Showcase</div>
+          					</div></a></div></div>
+						</div>
+                        
+                        <div class="column">
+							<div id="parent_div_1"> <div class="containerSub" onclick="currentSlide(2)" > 
+                            <img class="demo cursor" src="Images/Bahookie/CustomWrappigShowcase2.jpg" alt="PlaceHolder" style="width: 300px;">
+         					<div class="overlaySub"><div class="text">Custom Lable Showcase</div>
+          					</div></a></div></div>
+						</div>
+                        
+                        <div class="column">
+							<div id="parent_div_1"> <div class="containerSub" onclick="currentSlide(3)" > 
+                            <img class="demo cursor" src="Images/Bahookie/BackyardHoney.jpg" alt="PlaceHolder" style="width: 300px;">
+         					<div class="overlaySub"><div class="text">Barnyard Honey</div>
+          					</div></a></div></div>
+						</div>
+
+                        <div class="column">
+							<div id="parent_div_1"> <div class="containerSub" onclick="currentSlide(4)" > 
+                            <img class="demo cursor" src="Images/Bahookie/CoffeeCream.jpg" alt="PlaceHolder" style="width: 300px;">
+         					<div class="overlaySub"><div class="text">Coofee and Cream</div>
+          					</div></a></div></div>
+						</div>
+                        
+                        <div class="column">
+							<div id="parent_div_1"> <div class="containerSub" onclick="currentSlide(5)" > 
+                            <img class="demo cursor" src="Images/Bahookie/HappyHour.jpg" alt="PlaceHolder" style="width: 300px;">
+         					<div class="overlaySub"><div class="text">Happy Hour</div>
+          					</div></a></div></div>
+						</div>
+
+                        <div class="column">
+							<div id="parent_div_1"> <div class="containerSub" onclick="currentSlide(6)" > 
+                            <img class="demo cursor" src="Images/Bahookie/CBDPeace.jpg" alt="PlaceHolder" style="width: 300px;">
+         					<div class="overlaySub"><div class="text">CBD Peace</div>
+          					</div></a></div></div>
+						</div>
+                        
+                        <div class="column">
+							<div id="parent_div_1"> <div class="containerSub" onclick="currentSlide(7)" > 
+                            <img class="demo cursor" src="Images/Bahookie/Roses.jpg" alt="PlaceHolder" style="width: 300px;">
+         					<div class="overlaySub"><div class="text">Roses</div>
+          					</div></a></div></div>
+						</div>
+                        
+                        <div class="column">
+							<div id="parent_div_1"> <div class="containerSub" onclick="currentSlide(8)" > 
+                            <img class="demo cursor" src="Images/Bahookie/SmallCandle.jpg" alt="PlaceHolder" style="width: 300px;">
+         					<div class="overlaySub"><div class="text">Small Candles</div>
+          					</div></a></div></div>
+						</div>
+
+                        <div class="column">
+							<div id="parent_div_1"> <div class="containerSub" onclick="currentSlide(9)" > 
+                            <img class="demo cursor" src="Images/Bahookie/3dBasic.jpg" alt="PlaceHolder" style="width: 300px;">
+         					<div class="overlaySub"><div class="text">3D Basic Dish</div>
+          					</div></a></div></div>
+						</div>
+
+                        <div class="column">
+							<div id="parent_div_1"> <div class="containerSub" onclick="currentSlide(10)" > 
+                            <img class="demo cursor" src="Images/Bahookie/3dCoral.jpg" alt="PlaceHolder" style="width: 300px;">
+         					<div class="overlaySub"><div class="text">3D Coral Dish</div>
+          					</div></a></div></div>
+						</div>
+
+                        
+
+
+                    </div>
+                </div>  
+
+                <div id="gallery">
+                    <h1></h1>		
+                        <a onclick="history.back()" class="SeeMore">&laquo; Return</a>
+                </div>
+        </div>        
+
+        <!--Footer-->
+        <div class="footer">
+            <h2><b>Jmesco 2018-24</b></h2>
+            <!--<h3><a href="#.html" target="_blank">Email Link (loops)</a></h3>-->
+            <!--End Footer-->
+        </div>       
+
+    </div></div></body>
+
+</html>

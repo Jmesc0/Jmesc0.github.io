@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Jmesco/Mark</title>
+    <meta name="viewport" content="width=device-width, initial-scale=.8">	
+    <link rel="stylesheet" href="CSS/Images.css">
+	<link rel="stylesheet" href="CSS/Text.css">
+	<link rel="stylesheet" href="CSS/BodyLayout.css">
+	<link rel="stylesheet" href="CSS/NavbarButton.css">
+	<link rel="stylesheet" href="CSS/PopUpMenu.css">
+	<link rel="stylesheet" href="CSS/SlideshowHome.css">
+	<link rel="stylesheet" href="CSS/Gallery.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work Sans">
+
+	<style>
+
+    </style> </head> 
+
+    <body><div id="back"><div id="small">
+        
+        <!--slidout memu-->
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&laquo;</a>
+            <div class="overlay-content">
+    	
+				<div class="menu">
+                    <h1>Jmesco</h1>	
+                    <img src="Images/Jmesco_PFP.jpg" alt="PFP" width="100%" border="5">
+                      
+					<h2 class="TabPad" >
+						<i>« Je suis comme je suis, et cela me suffit. »</i>
+						<br>
+                    </h2>	
+                    
+                    <!-- about me or other body text
+					<p class="TabPad"> 	
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Maxime eum aut perspiciatis quisquam soluta. 
+                            Iusto consequatur porro non recusandae eius eos labore sed, ea nihil laudantium cum amet suscipit qui?
+                    </p>
+                    -->    
+                        <ul> <!--beginning of outer list -->
+                            <li><a class="NoBlue" href="index.html"><p class="ReturnPad">Home</p></a></li>
+                            <li><a class="NoBlue" href="GD.html"><p class="ReturnPad"> Graphic Design</p></a> 
+                                <ul> <!--beginning of first nested list-->
+                                    <li><a class="NoBlue" href="Bahookie.html"><p class="ReturnPad">Bahookie Soap</p></a></li>
+                                </ul></li>    
+                            <li><a class="NoBlue" href="Il.html"><p class="ReturnPad">Illustrations</p</a></li>  
+                            <li><a class="NoBlue" href="MakerSpace.html" target="_blank"><p class="ReturnPad">Other</p></a></li>
+                        <ul> <!-- end outer list -->
+
+				</div>  
+            </div>
+        </div>
+
+        <!--Banner-->
+        <div class="ban"><img src="Images/Banner.jpg" width="100%" class="NoRound"></div>
+
+        <!--Nav-->
+        <div id="navbar">
+            <a span style="cursor:pointer" onclick="openNav()">&raquo;</span> </a>  
+            <script>
+                 function openNav() {
+                    document.getElementById("myNav").style.width = "498px";
+                    }
+				
+                function closeNav() {
+                    document.getElementById("myNav").style.width = "0%";
+                    }
+            </script>
+        <script>
+                window.onscroll = function() {myFunction()};
+                
+                var navbar = document.getElementById("navbar");
+                var sticky = navbar.offsetTop;
+                
+                function myFunction() {
+                  if (window.pageYOffset >= sticky) {
+                    navbar.classList.add("sticky")
+                  } else {
+                    navbar.classList.remove("sticky");
+                  }
+                }
+        </script>    
+        <!--Nav end-->    
+        </div>
+        
+        <!--Main-->
+        <div class="main">
+
+                <!--slideshow-->
+                <div class="slideshow-container">
+
+                        <!--allows arrow keys for nav-->
+                        <script> 
+                        document.addEventListener('keydown', function(event) {
+                            if(event.keyCode == 37) {
+                                plusSlides(-1)
+                            }
+                            else if(event.keyCode == 39) {
+                                plusSlides(1)
+                            }
+                        });
+                        </script>
+
+
+                        <!--For Singgles !!! Note - Do not delete the scripts, otherwise, site breaks !!!-->
+                        <div class="mySlides fade">
+                            <img class="Show" src="Images/Main/MarkPortrait.jpg">
+                            <div class="caption-container-curved">
+                                Frog Girl
+                            </div>
+                        </div>
+
+                        <script>
+                                var slideIndex = 1;
+                                showSlides(slideIndex);
+                                
+                                function plusSlides(n) {
+                                  showSlides(slideIndex += n);
+                                }
+                                
+                                function currentSlide(n) {
+                                  showSlides(slideIndex = n);
+                                }
+                                
+                                function showSlides(n) {
+                                  var i;
+                                  var slides = document.getElementsByClassName("mySlides");
+                                  var dots = document.getElementsByClassName("dot");
+                                  if (n > slides.length) {slideIndex = 1}    
+                                  if (n < 1) {slideIndex = slides.length}
+                                  for (i = 0; i < slides.length; i++) {
+                                      slides[i].style.display = "none";  
+                                  }
+                                  for (i = 0; i < dots.length; i++) {
+                                      dots[i].className = dots[i].className.replace(" active", "");
+                                  }
+                                  slides[slideIndex-1].style.display = "block";  
+                                  dots[slideIndex-1].className += " active";
+                                }    
+                        </script>                    
+                </div>
+
+                <div id="gallery">
+                    <h1></h1>		
+                        <a onclick="history.back()" class="SeeMore">&laquo; Return</a>
+                </div>
+        </div>        
+
+        <!--Footer-->
+        <div class="footer">
+            <h2><b>Jmesco 2018-24</b></h2>
+            <!--<h3><a href="#.html" target="_blank">Email Link (loops)</a></h3>-->
+            <!--End Footer-->
+        </div>       
+
+    </div></div></body>
+
+</html>
